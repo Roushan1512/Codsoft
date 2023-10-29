@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.booking{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.bg-img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.text-form{
+    background-color: #1a1a1a94;
+    width: 40vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 1px 1px 10px rgb(48, 48, 48);
+    
+    box-shadow: 3px 3px 10px rgb(48, 48, 48) inset;
+}
+
+.heading-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5vw;
+    color: #ecf2ff;
+    padding: 0 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 1.2vh;
+    text-wrap: nowrap;
+}
+
+.book-form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    height: 90%;
+    padding:2vw;
+}
+
+.booking .book-form .flex .inputBox input{ 
+    width: 100%;
+    padding: .5rem;
+    border: .13rem solid rgb(87, 87, 87);
+    border-radius: .5rem;
+    font-size: 1.8vh;
+}
+
+ .inputBox:nth-child(5){
+    color: aqua;
+    gap: 1.2rem;
+    display: flex;
+}
+
+.inputBox:nth-child(5) div{
+    flex: 1;
+    padding: 1rem 0;
+    
+}
+.inputBox:nth-child(6){
+    color: aqua;
+    gap: 1.2rem;
+    display: flex;
+}
+
+.inputBox:nth-child(6) div{
+    flex: 1;
+    padding: 1rem 0;
+    object-fit: contain;
+    overflow: auto;
+}
+
+.booking .book-form .flex .inputBox span{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffffd8;
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: .2rem;
+}
+
+.booking .book-form .btn{
+    margin-top: 2rem;
+    padding: 1.2vh 1.5vw;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+    border: none;
+    font-size: .8vw;
+    width: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: clip;
+}
+
+.btn:active{
+    background-color: rgb(0, 103, 172);
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgb(197, 197, 197);
+    color: rgb(37, 37, 37);
+}
+
+.packageShower{
+position:absolute;
+background-color: rgba(41, 41, 41, 0.856);
+top: 50%;
+right: -90%;
+transform: translate(0,-50%);
+height: 50vh;
+width: 20vw;
+padding: 1vw;
+text-align: center;
+border-radius: 1rem;
+}
+.packageShower img{
+    height: 22vh;
+    width: 18vw;
+    border-radius: 1rem;
+    margin-bottom: 1.5vh;
+    object-fit: cover;
+}
+.packageShower input{
+    padding: 1vw;
+    margin: .8rem;
+    text-align: center;
+    cursor:default;
+}
+
+
+
+/* for sweetAlert */
+body.swal2-shown > [aria-hidden="true"] {
+    transition: 0.1s filter;
+    filter: blur(10px);
+  }
+  
