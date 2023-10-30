@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Satisfy&display=swap');
+html , body{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(53, 41, 41);
+}
+h1{
+    font-size: 80px;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Satisfy', cursive;
+    color: goldenrod;
+}
+h2{
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Satisfy', cursive;
+    color:burlywood;
+}
+img
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px black;
+}
+#info
+{
+    height: max-content;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px black;
+    background-color: rgb(56, 43, 43);
+    color: burlywood;
+}
